@@ -1,0 +1,25 @@
+<article>
+    <h1>1. interpolação </h1>
+    <p>interpolei a palavra {{ HelloWorld }}</p>
+</article>
+
+<article>
+    <h1>2. interpolação ancora </h1>
+    <a href="{{ href }}">google</a>
+</article>
+
+<article>
+    <h1>3. Event Binding</h1>
+    <p [style.color]="corDaFonte" (click)="setCorFonte()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt officiis amet tempore. Tenetur rerum quisquam minus iste aliquid. Iste at quis natus ab asperiores eligendi illum, mollitia cum odio accusamus.</p>
+</article>
+
+<article>
+    <h1>4. two way binding</h1>
+    <select #select (change)="setFontFamily(select.value)">
+        <option value="arial">Arial</option>
+        <option value="times new roman">Times New Roman</option>
+        <option value="comic sans ms">Comics Sans MS</option>
+        <option value="fantasy">Fantasy</option>
+    </select>
+    <p [style.fontFamily]="fontFamily">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis assumenda soluta blanditiis at quos sed sint id dignissimos unde adipisci. Unde recusandae numquam quae natus est dolores reprehenderit culpa voluptatum?</p>
+</article>
